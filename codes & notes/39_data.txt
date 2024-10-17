@@ -1,0 +1,2 @@
+Hello! world
+This is the example of the file writing

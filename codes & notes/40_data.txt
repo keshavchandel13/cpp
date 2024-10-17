@@ -1,0 +1,5 @@
+This is file.
+it has five lines.
+It is the concept of file handling.
+dealing with reading of file data.
+using ifstream.

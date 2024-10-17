@@ -24,7 +24,10 @@ class square:public Shape{
     }
 };
 int main(){
+    Shape *ptr;
     circle obj(2);
+    ptr = &obj;
+    cout<<"area: "<<ptr->draw()<<endl;
     cout<<"The area of the circle is: "<<obj.draw()<<endl;
     obj.display();
 
