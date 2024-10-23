@@ -16,7 +16,7 @@ int main(){
         cout<<"error"<<endl;
         return 1;
     }
-    fout<<"This is appended data"<<endl;
+    fout<<"This is appended data 2"<<endl;
     fout.close();
     cout<<"data appended"<<endl;
 

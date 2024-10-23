@@ -19,6 +19,5 @@ int main(){
         cout<<line<<endl;
     }
     fin.close();
-
 return 0;
 }
