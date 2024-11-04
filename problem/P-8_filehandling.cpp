@@ -18,16 +18,17 @@ ifstream fin("P-8_data.txt");
 if(fin){
     fin.seekg(-10,ios::end);
     string line;
+    int position = fin.tellg();
     while(getline(fin,line)){
 
     cout<<line<<endl;
     }
-    int position = fin.tellg();
     cout<<position;
 }
 fin.close();
-ofstream fout("P-8_data.txt",ios::ate);
-
+ofstream f("P-8_data.txt",ios::app);
+f<<" added text";
+f.close();
 
 
 return 0;
