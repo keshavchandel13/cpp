@@ -1,6 +1,7 @@
 #include <iostream>  
 #include<string>
 using namespace std;  
+// Template in class
 template<class T, int size>  
 class A   
 {  
@@ -17,7 +18,7 @@ class A
     }  
     void insertName(){
         for(int i=0;i<size;i++){
-            arr[i]="Employee"+to_string(i);
+            arr[i]="Employee "+to_string(i);
         }
     }
       
@@ -34,7 +35,7 @@ int main()
 {  
     A<int,10> t1;  
     A <float,10> t2;
-    A <char,5> t3;
+    A <string,5> t3;
     t1.insert();  
     t1.display(); 
     
