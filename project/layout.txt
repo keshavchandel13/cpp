@@ -1,0 +1,90 @@
+1. Understand the Features
+The system will have the following functionalities:
+
+Add new buses (admin functionality).
+View available buses and their schedules.
+Book tickets for a bus.
+Cancel tickets.
+Display passenger details.
+Exit the application.
+2. Plan the Classes and Data Structures
+a. Bus Class
+Responsibilities:
+
+Store bus details like bus ID, driver name, route, and timing.
+Maintain a list of available seats.
+Attributes:
+
+string busID
+string driverName
+string route
+string timing
+int seats[30] (to represent 30 seats, initialize all to 0 for unbooked).
+Methods:
+
+addBus() to add a new bus.
+displayBusDetails() to show details of the bus.
+b. Passenger Class
+Responsibilities:
+
+Store passenger information for booked tickets.
+Attributes:
+
+string name
+int seatNumber
+string busID
+Methods:
+
+bookTicket() to book a seat on a specific bus.
+cancelTicket() to cancel a booked seat.
+c. ReservationSystem Class
+Responsibilities:
+
+Manage buses and passengers.
+Provide a menu interface for users.
+Attributes:
+
+vector<Bus> buses to store all buses.
+vector<Passenger> passengers to store all passengers.
+Methods:
+
+addBus() to call Bus::addBus().
+displayAvailableBuses() to show all buses.
+bookTicket() to handle passenger booking.
+cancelTicket() to handle cancellations.
+displayPassengers() to show passenger details.
+3. Implementation Plan
+a. Main Menu
+Display the options for the user:
+
+1: Add a Bus
+2: View Available Buses
+3: Book a Ticket
+4: Cancel a Ticket
+5: View Passenger List
+6: Exit
+Use a while loop to keep the program running until the user chooses Exit.
+
+b. Input/Output Flow
+Adding a Bus:
+
+Ask admin to input busID, driverName, route, and timing.
+Initialize all seats as empty.
+Viewing Buses:
+
+Iterate through the buses vector and display bus details.
+Booking a Ticket:
+
+Ask for the bus ID.
+Check if the bus exists.
+Display available seats.
+Ask for the passenger's name and seat number.
+Mark the seat as booked in the bus and store the passenger's details in the passengers list.
+Canceling a Ticket:
+
+Ask for the passenger’s name or ticket details.
+Find the passenger in the passengers list.
+Mark the seat as available in the corresponding bus.
+Viewing Passengers:
+
+Iterate through the passengers list and display their details.
