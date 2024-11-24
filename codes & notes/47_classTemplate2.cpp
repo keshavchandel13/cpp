@@ -41,9 +41,5 @@ int main(){
     s1.pop();
     s1.pop();
     s1.display();
-
-
-
-
 return 0;
 }
