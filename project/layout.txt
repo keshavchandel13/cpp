@@ -88,3 +88,40 @@ Mark the seat as available in the corresponding bus.
 Viewing Passengers:
 
 Iterate through the passengers list and display their details.
+
+
++--------------------+
+|      Bus           |
++--------------------+
+| - busID: string    |
+| - driverName: string|
+| - route: string    |
+| - timing: string   |
+| - seats: int[30]   |
++--------------------+
+| + displayBusDetails() |
++--------------------+
+
++--------------------+
+|    Passenger       |
++--------------------+
+| - name: string     |
+| - seatNumber: int  |
+| - busID: string    |
++--------------------+
+|                    |
++--------------------+
+
++--------------------------------+
+|     ReservationSystem          |
++--------------------------------+
+| - buses: vector<Bus>           |
+| - passengers: vector<Passenger>|
++--------------------------------+
+| + addBus()                     |
+| + displayAvailableBuses()      |
+| + bookTicket()                 |
+| + cancelTicket()               |
+| + displayPassengers()          |
+| + showMenu()                   |
++--------------------------------+

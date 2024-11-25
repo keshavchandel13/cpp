@@ -31,6 +31,34 @@ class Bus{
             cout<<"Wrong Password. Try again later"<<endl;
         }
     }
+    // bus detail function
+    void displayBusDetails(){
+        cout<<"\nBus Id: "<<busId
+            <<"\nDriver Name: "<<driverName
+            <<"\nRoute: "<<route
+            <<"\nTiming: "<<timing;
+    }
+    bool bookSeat(int seatNumber){
+        if(seatNumber>1 || seatNumber<42 || seats[seatNumber-1]==1){
+            return false;
+        }
+        seats[seatNumber-1] = 1;
+        return true;
+    }
+    bool cancelSeat(int seatNumber){
+        if(seats[seatNumber-1]==1){
+            seats[seatNumber-1] = 0;
+            return true;
+        }
+    }
+    void displayAvailableSeats(){
+        cout<<"\nAvailable seats: ";
+        for(int i=0;i<42;i++){
+            if(seats[i]==0){
+                cout<<i+1<<"\t";
+            }
+        }
+    }
 };
 int main(){
     int choice;
