@@ -5,7 +5,7 @@ template <class Type>
 int findNum(Type *arr, Type num, int size){
     for(int i=0;i<size;i++){
         if(arr[i]==num){return i+1;}
-    } return -1;
+    } return -1;    
 
 }
 int main(){
