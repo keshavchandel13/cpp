@@ -9,7 +9,7 @@ class Cat: public Mammal{
     public:
     bool laysEgg(){ return false;}
 };
-class Platyus{
+class Platyus:public Mammal{
     public:
     bool laysEgg(){ return true;}
 };
@@ -26,9 +26,21 @@ int main(){
     cout<<typeid(*p).name();
 
     p=&platyus;
-    cout<<"P is pointing to:"
+    cout<<"\nP is pointing to:";
     cout<<typeid(*p).name();
 
 
     return 0;
 }
+/*
+Output:
+p is pointing to an object of type class Mammal
+p is pointing to an object of type class Cat
+p is pointing to an object of type class Platypus
+
+Removing virtual keyword will result in following output:
+
+p is pointing to an object of type class Mammal
+p is pointing to an object of type class Mammal
+p is pointing to an object of type class Mamma
+*/
