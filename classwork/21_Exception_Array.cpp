@@ -15,9 +15,5 @@ int main(){
     catch(const char* msg){
         cout<<msg<<endl;
     }
-
-
-
-
 return 0;
 }

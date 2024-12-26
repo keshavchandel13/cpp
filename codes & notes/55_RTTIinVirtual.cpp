@@ -2,7 +2,7 @@
 
 //vTable or Virtual Table: is a table of function pointers that is created by the compiler to support dynamic polymorphism. Whenever a class contains a virtual function, the compiler creates a Vtable for that class
 
-//vtable: Each object of the class is then provided with a hidden pointer to this table, known as Vptr.
+//vptr: Each object of the class is then provided with a hidden pointer to this table, known as Vptr.
 
 #include<iostream>
 #include<typeinfo>

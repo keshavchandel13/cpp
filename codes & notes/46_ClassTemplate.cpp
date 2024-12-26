@@ -17,7 +17,7 @@ class stack{
         return st[top--];
     }
 };
-int main(){
+int main(){  
     stack<int> s1;
     s1.push(12);
     s1.push(13);

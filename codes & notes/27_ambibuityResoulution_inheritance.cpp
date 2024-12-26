@@ -2,7 +2,7 @@
 using namespace std;
 /*
 Ambibuity in the inheritance:
-eg-->If we created multilevel inheritance and it has function with same name the last inherited function you are accesing the member. The function you want to use is in many classes then you should be specific that  which class function do you want to use
+eg-->If we created multiple inheritance and it has function with same name the last inherited function you are accesing the member. The function you want to use is in many classes then you should be specific that  which class function do you want to use
 */
 
 // Actual ambiguity is in multiple inheritance
@@ -46,9 +46,6 @@ int main(){
     // Ambibuity: 1 solved
     derived o1;
     o1.greet();
-    
-
-
    // Ambibuity: 2
    c o2;
    o2.say();

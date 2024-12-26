@@ -7,6 +7,8 @@ int main(){
     cout<<"the value of the ptr1 is:"<<*ptr1<<endl;
     shared_ptr <int> ptr2 = ptr1;
     cout<<"The value of the ptr2 is: "<<*ptr2<<endl;
+    weak_ptr <int> ptr3 = ptr2;
+    cout<<"The value of the ptr2 is: "<<*(ptr3.lock())<<endl;
     if(!ptr1){
         cout<<"The ptr1 is pointing to null\n";
     }
